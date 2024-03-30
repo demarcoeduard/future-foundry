@@ -1,0 +1,56 @@
+<div id="nav-bar">
+  <img id="logo" routerLink="home" src="favicon.ico">
+  <nav id="largeScreenNav" *ngIf="!isScreenSmall">
+    <a routerLink="home" routerLinkActive="active">Home</a>
+    <a routerLink="about-us" routerLinkActive="active">About Us</a>
+    <a routerLink="services" routerLinkActive="active">Services</a>
+    <a routerLink="faq" routerLinkActive="active">FAQ</a>
+    <a routerLink="careers" routerLinkActive="active">Careers</a>
+    <a routerLink="contact-us" routerLinkActive="active">Contact Us</a>
+  </nav>
+  <button id="menu" #menu (click)="onOpen()" *ngIf="isScreenSmall" aria-controls="smallScreenNav" aria-expanded="false">
+    <svg viewBox="0 0 100 100" width="50">
+      <rect
+        id="top" 
+        class="line" 
+        width="80" 
+        height="10"
+        x="10"
+        y="25"
+        rx="5">
+      </rect>
+      <rect 
+        id="middle"
+        class="line"
+        width="80"
+        height="10"
+        x="10"
+        y="45"
+        rx="5">
+      </rect>
+      <rect
+        id="bottom"
+        class="line"
+        width="80"
+        height="10"
+        x="10"
+        y="65"
+        rx="5">
+      </rect>
+    </svg>
+  </button>
+</div>
+<nav id="smallScreenNav" *ngIf="isOpen" [@isOpenClosedAnimation]="isOpen">
+  <a routerLink="home" routerLinkActive="active">Home</a>
+  <hr>
+  <a routerLink="about-us" routerLinkActive="active">About Us</a>
+  <hr>
+  <a routerLink="services" routerLinkActive="active">Services</a>
+  <hr>
+  <a routerLink="faq" routerLinkActive="active">FAQ</a>
+  <hr>
+  <a routerLink="careers" routerLinkActive="active">Careers</a>
+  <hr>
+  <a routerLink="contact-us" routerLinkActive="active">Contact Us</a>
+  <hr>
+</nav>
