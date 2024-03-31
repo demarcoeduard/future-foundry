@@ -24,7 +24,7 @@ a {
 }
 
 #largeScreenNav a{
-  padding: 13px 20px 13px 20px;
+  padding: 13px 18px 13px 18px;
   font-size: 20px;
   border-radius: 5px;
   margin-left: 10px;
@@ -43,8 +43,7 @@ a {
 }
 
 #contact {
-  border: 2px solid var(--action-color) !important;
-  border-radius: 50px !important;
+  border-color: var(--action-color) !important;
 }
 
 /* SMALL SCREEN */
