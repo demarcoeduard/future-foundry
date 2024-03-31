@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css'],
   animations: [
-    trigger('isOpenClosedAnimation', [
+    trigger('slideInOut', [
       transition(':enter', [
         style({ transform: 'scaleX(0)' }),
         animate('0.3s ease', style({ transform: 'scaleX(1)' }))

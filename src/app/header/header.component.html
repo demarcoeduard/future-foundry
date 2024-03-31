@@ -40,7 +40,7 @@
     </svg>
   </button>
 </div>
-<nav id="smallScreenNav" *ngIf="isOpen" [@isOpenClosedAnimation]="isOpen">
+<nav id="smallScreenNav" *ngIf="isOpen" @slideInOut>
   <a routerLink="home" routerLinkActive="active">Home</a>
   <hr>
   <a routerLink="about-us" routerLinkActive="active">About Us</a>
