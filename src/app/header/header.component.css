@@ -45,8 +45,12 @@ a {
 /* SMALL SCREEN */
 
 @media (width <= 1200px) {
-  #logo {
+  #logoNav {
     margin: auto;
+  }
+
+  #logo {
+    margin: 0px;
   }
 }
 
