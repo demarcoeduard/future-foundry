@@ -6,7 +6,7 @@
     <a routerLink="services" routerLinkActive="active">Services</a>
     <a routerLink="faq" routerLinkActive="active">FAQ</a>
     <a routerLink="careers" routerLinkActive="active">Careers</a>
-    <a routerLink="contact-us" routerLinkActive="active">Contact Us</a>
+    <a id="contact" routerLink="contact-us" routerLinkActive="active">Contact Us</a>
   </nav>
   <button id="menu" #menu (click)="onOpen()" *ngIf="isScreenSmall" aria-controls="smallScreenNav" aria-expanded="false">
     <svg viewBox="0 0 100 100" width="50">
