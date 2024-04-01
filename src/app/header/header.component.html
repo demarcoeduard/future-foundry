@@ -1,4 +1,4 @@
-<div id="nav-bar">
+<header id="nav-bar">
   <a routerLink="home" id="logoNav"><img id="logo" src="favicon.ico"></a>
   <nav id="largeScreenNav" *ngIf="!isScreenSmall">
     <a routerLink="home" routerLinkActive="active">Home</a>
@@ -39,7 +39,7 @@
       </rect>
     </svg>
   </button>
-</div>
+</header>
 <nav id="smallScreenNav" *ngIf="isOpen" @slideInOut>
   <a routerLink="home" routerLinkActive="active">Home</a>
   <hr>
