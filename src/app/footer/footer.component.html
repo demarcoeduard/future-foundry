@@ -1,0 +1,39 @@
+<footer>
+  <div id="footerContainer">
+    <form (ngSubmit)="onSubmit(form)" #form="ngForm" id="newsletter" >
+      <h2>Newsletter Signup</h2>
+      <input 
+        type="text" 
+        placeholder="Name" 
+        ngModel 
+        name="name" 
+        required>
+      <input 
+        type="email" 
+        placeholder="Email" 
+        ngModel 
+        name="email" 
+        email
+        required>
+      <button type="submit">Subscribe</button>
+    </form>
+    <div id="sitemap">
+      <h2>Sitemap</h2>
+      <a routerLink="home">Home</a>
+      <a routerLink="about-us">About Us</a>
+      <a routerLink="services">Services</a>
+      <a routerLink="faq">FAQ</a>
+      <a routerLink="careers">Careers</a>
+      <a routerLink="contact-us">Contact Us</a>
+    </div>
+    <div id="socials">
+      <img id="logo" src="favicon.ico" alt="website logo">
+      <div id="socialsContainer">
+        <img class="social" src="assets/linkedin.svg" alt="linkedin icon">
+        <img class="social" src="assets/instagram.svg" alt="instagram icon">
+        <img class="social" src="assets/x.svg" alt="x icon">
+      </div>
+    </div>
+  </div>
+  <p id="copyright">© 2024 Future Foundry. All Rights Reserved.
+</footer>
