@@ -7,7 +7,6 @@ import { NgForm } from '@angular/forms';
   styleUrls: ['./footer.component.css']
 })
 export class FooterComponent {
-  @ViewChild('f') formEl!: NgForm;
 
   onSubmit(form: NgForm) {
     if (form.valid) {
