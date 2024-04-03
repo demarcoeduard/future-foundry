@@ -9,7 +9,6 @@ import { NgForm } from '@angular/forms';
 export class FooterComponent {
   @ViewChild('f') formEl!: NgForm;
 
-
   onSubmit(form: NgForm) {
     if (form.valid) {
       alert('Subscription made!');
