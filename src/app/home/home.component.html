@@ -5,7 +5,6 @@
     <button id="heroBtn" (click)="onScroll()">Discover more</button>
   </div>
 </div>
-
 <div id="about" #about>
   <div id="aboutWrapper">
     <img id="aboutImg" src="assets/about-image.jpg" alt="group of people at the table">
@@ -18,6 +17,90 @@
         pool of talent including full-stack engineers, AI specialists, and more.
       </p>
       <a routerLink="/about-us"><button id="aboutBtn">About Us</button></a>
+    </div>
+  </div>
+</div>
+<div id="services">
+  <h3 id="servicesHeader">Our Services</h3>
+  <div id="cards">
+    <a routerLink="/services"><div class="card"><p>Front-End</p></div></a>
+    <a routerLink="/services"><div class="card"><p>Back-End</p></div></a>
+    <a routerLink="/services"><div class="card"><p>Full Stack</p></div></a>
+    <a routerLink="/services"><div class="card"><p>Machine Learning</p></div></a>
+    <a routerLink="/services"><div class="card"><p>UI/UX</p></div></a>
+    <a routerLink="/services"><div class="card"><p>Team As A Service</p></div></a>  
+  </div>
+</div>
+<div id="testimonials">
+  <h3 id="testimonialsHeader">Customer Experience</h3>
+  <div id="testimonialsWrapper">
+    <div class="testimonial" *ngIf="firstTestimonial">
+      <h4>Accelerated Development & Innovation</h4>
+      <img src="assets/rating.png" alt="rating">
+      <p>
+        Working with Future Foundry was a game-changer for our business. 
+      </p>
+      <p>
+        Their platform connected us with top-notch developers who not only 
+        understood our project requirements but also brought fresh ideas to the table. 
+      </p>
+      <p>
+        Thanks to Future Foundry, we were able to accelerate our software development 
+        process and stay ahead of the competition.
+      </p>
+    </div>
+    <div class="testimonial" *ngIf="secondTestimonial">
+      <h4>Effortless Startup Hiring</h4>
+      <img src="assets/rating.png" alt="rating">
+      <p>
+        I can't recommend Future Foundry enough! As a startup founder, finding the right talent 
+        for our tech team was a daunting task. But Future Foundry made it effortless. 
+      </p>
+      <p>
+        Their platform provided us with access to a diverse pool of skilled professionals, and 
+        within no time, we had a team of experts working on our project. 
+      </p>
+      <p>
+        Their commitment to quality and customer satisfaction is unparalleled.
+      </p>
+    </div>
+    <div class="testimonial" *ngIf="thirdTestimonial">
+      <h4>On-Time Launch & Seamless Development</h4>
+      <img src="assets/rating.png" alt="rating">
+      <p>
+        Future Foundry exceeded our expectations in every way. Their intuitive platform made it 
+        easy to find the perfect match for our software needs. 
+      </p>
+      <p>
+        From the initial consultation to the final delivery, their team was responsive, reliable, and highly skilled. 
+      </p>
+      <p>
+        With Future Foundry's help, we were able to launch our product on time and within budget. 
+        We're grateful for their partnership and look forward to working with them again in the future.
+      </p>
+    </div>
+    <div id="customers">
+      <button class="customer" (click)="onShowTestimonial(1)" [ngClass]="firstTestimonial ? 'active' : ''">
+        <img class="customerImage" src="assets/person1.jpg" alt="customer image">
+        <div class="info">
+          <p class="name">Jarred Berry</p>
+          <p class="position">Product Manager</p>
+        </div>
+      </button>   
+      <button class="customer" (click)="onShowTestimonial(2)" [ngClass]="secondTestimonial ? 'active' : ''">
+        <img class="customerImage" src="assets/person2.jpg" alt="customer image">
+        <div class="info">
+          <p class="name">Gisele Kuehl</p>
+          <p class="position">Program Manager</p>
+        </div>
+      </button>
+      <button class="customer" (click)="onShowTestimonial(3)" [ngClass]="thirdTestimonial ? 'active' : ''">
+        <img class="customerImage" src="assets/person3.jpg" alt="customer image">
+        <div class="info">
+          <p class="name">Denny Kivela</p>
+          <p class="position">Project Manager</p>
+        </div>
+      </button>
     </div>
   </div>
 </div>
