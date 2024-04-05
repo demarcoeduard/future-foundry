@@ -152,8 +152,9 @@ h2 {
 /* ABOUT */
 
 #about {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
+  padding: 100px 0px;
 }
 
 #aboutWrapper {
