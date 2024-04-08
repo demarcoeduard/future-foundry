@@ -1,11 +1,11 @@
-<div id="hero">
+<section id="hero">
   <div id="heroText">
     <h1>For a software driven future</h1>
     <h2>We provide the right software solution</h2>
     <button id="heroBtn" (click)="onScroll()">Discover more</button>
   </div>
-</div>
-<div id="about" #about>
+</section>
+<section id="about" #about>
   <div id="aboutWrapper">
     <img id="aboutImg" src="assets/about-image.jpg" alt="group of people at the table">
     <div id="aboutText">
@@ -19,8 +19,8 @@
       <a routerLink="/about-us"><button id="aboutBtn">About Us</button></a>
     </div>
   </div>
-</div>
-<div id="services">
+</section>
+<section id="services">
   <h3 id="servicesHeader">Our Services</h3>
   <div id="cards">
     <a routerLink="/services"><div class="card"><p>Front-End</p></div></a>
@@ -30,8 +30,8 @@
     <a routerLink="/services"><div class="card"><p>UI/UX</p></div></a>
     <a routerLink="/services"><div class="card"><p>Team As A Service</p></div></a>  
   </div>
-</div>
-<div id="testimonials">
+</section>
+<section id="testimonials">
   <h3 id="testimonialsHeader">Customer Experience</h3>
   <div id="testimonialsWrapper">
     <div class="testimonial" *ngIf="firstTestimonial">
@@ -50,7 +50,7 @@
       </p>
     </div>
     <div class="testimonial" *ngIf="secondTestimonial">
-      <h4>Effortless Startup Hiring</h4>
+      <h4>Effortless Startup Hiring Process</h4>
       <img src="assets/rating.png" alt="rating">
       <p>
         I can't recommend Future Foundry enough! As a startup founder, finding the right talent 
@@ -103,4 +103,4 @@
       </button>
     </div>
   </div>
-</div>
+</section>
