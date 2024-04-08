@@ -13,6 +13,7 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
 import { FormsModule } from '@angular/forms';
+import { SectionHeaderComponent } from './shared/section-header/section-header.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { FormsModule } from '@angular/forms';
     CareersComponent,
     ContactUsComponent,
     HomeComponent,
-    FooterComponent
+    FooterComponent,
+    SectionHeaderComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,32 @@
+section {
+  position: relative;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url(../../../assets/section-image.jpg) center;
+  background-size: cover;
+  filter: brightness(50%);
+}
+
+h1 {
+  position: relative;
+  color: var(--accent-color);
+  font-size: 100px;
+  filter: drop-shadow(0 0 1rem black);
+}
+
+@media (width <= 700px) {
+  h1 {
+    font-size: 60px;
+  }
+}
