@@ -19,7 +19,6 @@ section::before {
 }
 
 h1 {
-  position: relative;
   color: var(--accent-color);
   font-size: 100px;
   filter: drop-shadow(0 0 1rem black);
