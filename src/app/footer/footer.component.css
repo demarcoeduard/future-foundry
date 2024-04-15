@@ -3,6 +3,7 @@
 footer {
   background-color: var(--primary-color);
   padding: 50px 0px 10px 0px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
 }
 
 /* FOOTER CONTAINER */

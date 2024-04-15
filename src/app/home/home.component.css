@@ -4,6 +4,7 @@
   background: url('../../assets/hero-image.jpg') center;
   background-size: cover;
   height: calc(100vh - 85px);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
 }
 
 #heroText {
@@ -274,6 +275,7 @@ h2 {
   align-items: center;
   row-gap: 100px;
   padding: 100px 0px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
 }
 
 a {
