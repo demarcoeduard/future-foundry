@@ -16,6 +16,7 @@ summary {
   list-style: none;
   color: var(--accent-color);
   font-size: 30px;
+  font-weight: bold;
   padding-right: 50px;
   user-select: none;
   cursor: pointer;
@@ -71,6 +72,7 @@ p {
 
   details {
     width: 400px;
+    padding: 20px;
   }
   
   summary {
@@ -80,11 +82,12 @@ p {
   
   summary::after {
     font-size: 30px;
-    top: 43px;
+    top: 33px;
     right: 25px;
   }
 
   p {
     font-size: 16px;
+    padding: 10px;
   }
 }
