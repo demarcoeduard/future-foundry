@@ -1,1 +1,91 @@
 <app-section-header [title]="title"></app-section-header>
+<section id="description">
+  <img id="careersImage" src="assets/careers-image.jpg" alt="our team working together">
+  <div id="text">
+    <p>
+      <span>At Future Foundry</span>, our team is our core. We're a passionate, diverse 
+      group united by a love of innovation, collaboration, and excellence. 
+      From software development to design, our team brings a wealth of expertise. 
+      What truly sets us apart is our ability to work seamlessly as one.
+    </p>
+    <p>
+      <span>Team Dynamics</span>: We believe in open communication and teamwork. Every 
+      voice is valued, from brainstorming to project execution. Our flat 
+      structure allows ideas to flow freely, fostering creativity and 
+      driving results.
+    </p>
+    <p>
+      <span>Cooperation and Support</span>: Success is a team sport at Future Foundry. 
+      We prioritize cooperation and support at all levels. We lend helping 
+      hands, share knowledge, and celebrate each other's wins. By supporting 
+      one another, we achieve individual and collective goals.
+    </p>
+    <p>
+      <span>Continuous Learning and Growth</span>: We understand the ever-changing landscape. 
+      That's why we invest in continuous learning through training, mentorship, 
+      and ongoing feedback. We empower our team to grow their skills, explore new 
+      technologies, and stay ahead of the curve, ensuring we remain innovation leaders.
+    </p>
+    <p>
+      <span>Join Us</span>: If you're passionate about technology, thrive in a collaborative 
+      environment, and are eager to make a difference, we'd love to have you on 
+      our team. Explore our current openings and embark on a rewarding journey 
+      with Future Foundry.
+    </p>
+  </div>
+</section>
+<h1>Career Opportunities</h1>
+<section id="positions">
+  <div class="position" *ngFor="let position of positions">
+    <div class="header">
+      <img class="icon" [src]="position.icon">
+      <h2>{{ position.title }}</h2>
+    </div>
+    <ul>
+      <li *ngFor="let skill of position.skills">{{ skill }}</li>
+    </ul>
+  </div>
+</section>
+<h1 id="formTitle">Join Our Team</h1>
+<form (ngSubmit)="onSubmit(form)" #form="ngForm">
+  <label for="name">Name</label>
+  <input 
+    id="name" 
+    type="text" 
+    ngModel
+    name="name"
+    required
+    placeholder="John Doe">
+  <label for="email">Email</label>
+  <input 
+    id="email" 
+    type="email" 
+    ngModel
+    name="email"
+    email
+    required
+    placeholder="example@gmail.com">
+  <label for="position">Position</label>
+  <select id="position">
+    <option value="Front-End Developer">Front-End Developer</option>
+    <option value="Back-End Developer">Back-End Developer</option>
+    <option value="Full Stack Developer">Full Stack Developer</option>
+    <option value="Machine Learning Engineer">Machine Learning Engineer</option>
+    <option value="UI/UX Designer">UI/UX Designer</option>
+    <option value="Team as a Service Member">Team as a Service Member</option>
+  </select>
+  <label for="resume">Resume</label>
+  <input 
+    id="resume" 
+    ngModel 
+    name="resume"  
+    required 
+    type="file">
+  <label for="message">Message</label>
+  <textarea 
+    id="message" 
+    cols="30" 
+    rows="10" 
+    placeholder="Message..."></textarea>
+  <button type="submit">Submit</button>
+</form>
