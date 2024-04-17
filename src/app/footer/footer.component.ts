@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component } from '@angular/core'; 
 import { NgForm } from '@angular/forms';
 
 @Component({
@@ -7,13 +7,21 @@ import { NgForm } from '@angular/forms';
   styleUrls: ['./footer.component.css']
 })
 export class FooterComponent {
+  showPopUp = false;
+  popUpText1 = "Thank you for subscribing.";
+  popUpText2 = "Now you'll be able to receive our latest updates.";
 
   onSubmit(form: NgForm) {
     if (form.valid) {
-      alert('Subscription made!');
-      form.reset()
+      this.showPopUp = true;
+      
+      setTimeout(() => {
+        this.showPopUp = false;
+        form.reset();
+      }, 3000);
     } else {
-      alert('Please complete the required fields!')
+      form.controls['name'].markAsTouched();
+      form.controls['email'].markAsTouched();
     }
   }
 }

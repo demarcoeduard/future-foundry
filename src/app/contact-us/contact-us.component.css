@@ -72,6 +72,14 @@ button:hover {
   background-color: var(--action-color);
 }
 
+.popUpOn {
+  display: block;
+}
+
+.popUpOff {
+  display: none;
+}
+
 @media (width <= 1200px) {
   section {
     width: 700px;

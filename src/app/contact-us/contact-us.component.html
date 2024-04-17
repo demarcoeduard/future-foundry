@@ -28,10 +28,13 @@
     </select>
     <label for="message">Message</label>
     <textarea 
-      id="message" 
+      id="message"
+      ngModel
+      name="message" 
       cols="30" 
       rows="10" 
       placeholder="Message..."></textarea>
     <button>Submit</button>
   </form>
 </section>
+<app-pop-up [text1]="popUpText1" [text2]="popUpText2" [ngClass]="showPopUp ? 'popUpOn' : 'popUpOff'"></app-pop-up>

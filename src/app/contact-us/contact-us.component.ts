@@ -9,10 +9,18 @@ import { NgForm } from '@angular/forms';
 export class ContactUsComponent {
   title = 'Contact Us';
 
+  showPopUp = false;
+  popUpText1 = "Thank you for contacting us.";
+  popUpText2 = "We'll get back to you shortly.";
+
   onSubmit(form: NgForm) {
     if (form.valid) {
-      alert('The message has been sent!');
-      form.reset();
+      this.showPopUp = true;
+
+      setTimeout(() => {
+        this.showPopUp = false;
+        form.reset();
+      }, 3000);
     } else {
       alert('Please complete all the required fields!');
       form.controls['name'].markAsTouched();

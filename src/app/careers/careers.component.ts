@@ -9,6 +9,10 @@ import { NgForm } from '@angular/forms';
 export class CareersComponent {
   title = 'Careers';
 
+  showPopUp = false;
+  popUpText1 = "Thank you for your application.";
+  popUpText2 = "You'll be contacted shortly.";
+
   positions = [
     {
       icon: 'assets/front-end.svg',
@@ -86,10 +90,16 @@ export class CareersComponent {
 
   onSubmit(form: NgForm) {
     if (form.valid) {
-      alert('Form has been submitted');
-      form.reset();
+      this.showPopUp = true;
+      
+      setTimeout(() => {
+        this.showPopUp = false;
+        form.reset();
+      }, 3000);
     } else {
-      alert('Please complete all of the required fields');
+      form.controls['name'].markAsTouched();
+      form.controls['email'].markAsTouched();
+      form.controls['resume'].markAsTouched();
     }
   }
 }

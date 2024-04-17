@@ -9,6 +9,10 @@ import { NgForm } from '@angular/forms';
 export class ServicesComponent {
   title = 'Services';
 
+  showPopUp = false;
+  popUpText1 = "Thank you for choosing Future Foundry.";
+  popUpText2 = "You'll be contacted shortly.";
+
   services = [
     {
       class1: "service",
@@ -67,12 +71,16 @@ export class ServicesComponent {
   ];
 
   onSubmit(form: NgForm) {
-    if (!form.valid) {
-      alert('Invalid Form');
+    if (form.valid) {
+      this.showPopUp = true;
+      
+      setTimeout(() => {
+        this.showPopUp = false;
+        form.reset();
+      }, 3000);
     } else {
-      alert('The request has been submitted');
+      form.controls['name'].markAsTouched();
+      form.controls['email'].markAsTouched();
     }
-
-    form.reset();
   }
 }

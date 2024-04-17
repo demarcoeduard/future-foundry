@@ -111,6 +111,14 @@ span {
   color: var(--action-color);
 }
 
+.popUpOn {
+  display: block;
+}
+
+.popUpOff {
+  display: none;
+}
+
 @media (width <= 1000px) {
   #footerContainer {
     flex-direction: column;

@@ -175,6 +175,14 @@ button:hover {
   color: var(--accent-color);
 }
 
+.popUpOn {
+  display: block;
+}
+
+.popUpOff {
+  display: none;
+}
+
 @media (width <= 1200px) {
   #description {
     width: 900px;
