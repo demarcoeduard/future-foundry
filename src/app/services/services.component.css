@@ -203,7 +203,7 @@ input.ng-touched.ng-invalid {
   label {
     width: 100%;
     font-size: 20px;
-    padding-top: 10px;
+    margin-bottom: -5px;
   }
   
   input {
