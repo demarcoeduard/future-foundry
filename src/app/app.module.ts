@@ -14,6 +14,7 @@ import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
 import { FormsModule } from '@angular/forms';
 import { SectionHeaderComponent } from './shared/section-header/section-header.component';
+import { PopUpComponent } from './shared/pop-up/pop-up.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { SectionHeaderComponent } from './shared/section-header/section-header.c
     ContactUsComponent,
     HomeComponent,
     FooterComponent,
-    SectionHeaderComponent
+    SectionHeaderComponent,
+    PopUpComponent
   ],
   imports: [
     BrowserModule,
