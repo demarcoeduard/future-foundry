@@ -1,0 +1,112 @@
+section {
+  width: 1100px;
+  height: 700px;
+  display: flex;
+  margin: 100px auto;
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+img {
+  width: 50%;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 30px;
+  row-gap: 10px;
+}
+
+label {
+  color: var(--action-color);
+  font-size: 30px;
+}
+
+label, select, button {
+  cursor: pointer;
+}
+
+input, select{
+  font-size: 20px;
+  padding: 10px;
+  height: 50px;
+  border: 2px solid transparent;
+  margin-bottom: 10px;
+  border-radius: 3px;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+}
+
+input.ng-touched.ng-invalid {
+  border-color: red;
+}
+
+textarea {
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 3px;
+  border: 2px solid transparent;
+}
+
+button {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+  color: var(--action-color);
+  background-color: var(--primary-color);
+  border: 2px solid var(--action-color);
+  border-radius: 5px;
+  transition: 0.3s all;
+}
+
+button:hover {
+  color: var(--accent-color);
+  background-color: var(--action-color);
+}
+
+@media (width <= 1200px) {
+  section {
+    width: 700px;
+    height: auto;
+    margin: 80px auto;
+  }
+  
+  img {
+    display: none;
+  }
+  
+  form {
+    width: 100%;
+  }
+}
+
+@media (width <= 800px) {
+  section {
+    width: 400px;
+  }
+
+  form {
+    row-gap: 5px;
+  }
+
+  label {
+    font-size: 20px;
+    padding-top: 10px;
+  }
+
+  input, select, textarea, button {
+    font-size: 16px;
+  }
+
+  input, select {
+    height: 45px;
+  }
+}

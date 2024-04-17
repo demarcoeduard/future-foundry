@@ -1,1 +1,37 @@
 <app-section-header [title]="title"></app-section-header>
+<section>
+  <img src="assets/contactus-image.jpg" alt="contact us image">
+  <form (ngSubmit)="onSubmit(form)" #form="ngForm">
+    <label for="name">Name</label>
+    <input
+      type="text"
+      id="name"
+      ngModel
+      name="name" 
+      required
+      placeholder="John Doe">
+    <label for="email">Email</label>
+    <input 
+      type="email" 
+      id="email"
+      ngModel
+      name="email"
+      email
+      required
+      placeholder="example@gmail.com">
+    <label for="subject">Select Subject</label>
+    <select id="subject">
+      <option value="Technical Support">Technical Support</option>
+      <option value="Team & Services">Team & Services</option>
+      <option value="Billing & Account">Billing</option>
+      <option value="Other">Other</option>
+    </select>
+    <label for="message">Message</label>
+    <textarea 
+      id="message" 
+      cols="30" 
+      rows="10" 
+      placeholder="Message..."></textarea>
+    <button>Submit</button>
+  </form>
+</section>
