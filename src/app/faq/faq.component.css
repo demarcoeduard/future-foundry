@@ -22,6 +22,10 @@ summary {
   cursor: pointer;
 }
 
+summary::-webkit-details-marker {
+  display: none;
+}
+
 summary::after {
   content: ">";
   position: absolute;
