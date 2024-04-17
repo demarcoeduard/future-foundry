@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 
 @Component({
@@ -6,7 +6,7 @@ import { NgForm } from '@angular/forms';
   templateUrl: './services.component.html',
   styleUrls: ['./services.component.css']
 })
-export class ServicesComponent {
+export class ServicesComponent implements OnInit {
   title = 'Services';
 
   showPopUp = false;
@@ -69,6 +69,10 @@ export class ServicesComponent {
       text2: "With our 'Team as a Service' model, you can scale your resources up or down as needed, ensuring timely delivery and project success without the hassle of recruitment or overhead costs."
     }
   ];
+
+  ngOnInit(): void {
+    window.scrollTo(0, 0);
+  }
 
   onSubmit(form: NgForm) {
     if (form.valid) {

@@ -1,15 +1,19 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit {
   @ViewChild('about') about!: ElementRef;
   firstTestimonial = true;
   secondTestimonial = false;
   thirdTestimonial = false;
+
+  ngOnInit(): void {
+    window.scrollTo(0, 0);
+  }
 
   onScroll() {
     this.about.nativeElement.scrollIntoView({behavior: 'smooth'});
