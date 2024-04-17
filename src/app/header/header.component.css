@@ -106,11 +106,14 @@ hr {
 #menu .line {
   fill: var(--action-color);
   transition: y 0.15s ease 0.15s, rotate 0.15s ease, opacity 0s 0.15s;
+  -webkit-transition: y 0.15s ease 0.15s, rotate 0.15s ease, opacity 0s 0.15s;
   transform-origin: center;
+  -webkit-transform-origin: center;
 }
 
 #menu[aria-expanded="true"] .line {
   transition: y 0.15s ease, rotate 0.15s ease 0.15s, opacity 0s 0.15s;
+  -webkit-transition: y 0.15s ease, rotate 0.15s ease 0.15s, opacity 0s 0.15s;
 }
 
 #menu[aria-expanded="true"] :is(#top, #bottom) {
