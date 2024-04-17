@@ -117,7 +117,7 @@ hr {
 }
 
 #menu[aria-expanded="true"] :is(#top, #bottom) {
-  y: 45;
+  y: 45px;
 }
 
 #menu[aria-expanded="true"] #top {
