@@ -26,7 +26,6 @@ export class ContactUsComponent implements OnInit {
         form.reset();
       }, 3000);
     } else {
-      alert('Please complete all the required fields!');
       form.controls['name'].markAsTouched();
       form.controls['email'].markAsTouched();
     }
