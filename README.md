@@ -1,27 +1,73 @@
-# FutureFoundry
+# Future Foundry
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.12.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/demarcoeduard/future-foundry)
+[![GitHub forks](https://img.shields.io/github/forks/demarcoeduard/hospital-crm.svg)](https://github.com/demarcoeduard/future-foundry/network)
 
-## Development server
+Welcome to Future Foundry! This repository contains the codebase for the Future Foundry website, an outsourcing platform offering various software services including Front-End, Back-End, Full Stack, Machine Learning, UI/UX, and Team As A Service. 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+**Check out the live website: [Future Foundry](https://demarcoeduard.github.io/future-foundry/)**
 
-## Code scaffolding
+## Pages
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **Home**: Features a hero section, a brief about us, an overview of services, testimonials, and a footer with a newsletter signup, sitemap, and social links.
 
-## Build
+- **About Us**: Provides insights into what they do as an outsourcing website and their story.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- **Services**: Describes each service provided by Future Foundry and includes a form for buying those services.
 
-## Running unit tests
+- **FAQ**: Contains elements displaying frequently asked questions with dropdowns that displays their answers.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- **Careers**: Highlights the team at Future Foundry and lists the expectations that they have for each open position and also includes form for job applications.
 
-## Running end-to-end tests
+- **Contact Us**: Offers a form for contacting Future Foundry by first selecting the most appropriate subject option and a message regarding that subject.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Getting Started
 
-## Further help
+### 1. Fork the Repository
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Click on the "Fork" button at the top right corner of this page.
+
+### 2. Clone the Repository
+
+Clone the forked repository to your local machine using the following command:
+
+```bash
+git clone https://github.com/your-username/future-foundry.git
+```
+
+### 3.  Navigate to the Project Directory
+
+Navigate to the directory using the following cd command:
+
+```bash
+cd future-foundry
+```
+
+### 4. Install Dependencies
+
+Install project dependencies by running:
+
+```bash
+npm install
+```
+
+### 5. Run the Development Server
+
+Start the development server with:
+
+```bash
+ng serve
+```
+
+### 6. Access the Application
+
+Visit http://localhost:4200 in your web browser to use the application.
+
+## Contributing
+
+Contributions are welcome! If you find any bugs or have suggestions for improvements, please submit an issue or create a pull request.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
