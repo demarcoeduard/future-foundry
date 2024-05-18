@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { NgForm } from '@angular/forms';
 
 @Component({
@@ -6,16 +6,12 @@ import { NgForm } from '@angular/forms';
   templateUrl: './contact-us.component.html',
   styleUrls: ['./contact-us.component.css']
 })
-export class ContactUsComponent implements OnInit {
+export class ContactUsComponent {
   title = 'Contact Us';
 
   showPopUp = false;
   popUpText1 = "Thank you for contacting us.";
   popUpText2 = "We'll get back to you shortly.";
-
-  ngOnInit(): void {
-    window.scrollTo(0, 0);
-  }
 
   onSubmit(form: NgForm) {
     if (form.valid) {

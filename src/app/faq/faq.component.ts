@@ -1,11 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-faq',
   templateUrl: './faq.component.html',
   styleUrls: ['./faq.component.css']
 })
-export class FaqComponent implements OnInit {
+export class FaqComponent {
   title = 'FAQ';
 
   faqs = [
@@ -42,8 +42,4 @@ export class FaqComponent implements OnInit {
       answer: "Getting started with Future Foundry is easy. Simply head to the services section to explore our options . If you have specific questions or need assistance, feel free to reach out to our support team, and we'll be happy to help you get started on your journey with Future Foundry."
     }
   ]
-
-  ngOnInit(): void {
-    window.scrollTo(0, 0);
-  }
 }

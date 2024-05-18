@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { NgForm } from '@angular/forms';
 
 @Component({
@@ -6,7 +6,7 @@ import { NgForm } from '@angular/forms';
   templateUrl: './careers.component.html',
   styleUrls: ['./careers.component.css']
 })
-export class CareersComponent implements OnInit {
+export class CareersComponent {
   title = 'Careers';
 
   showPopUp = false;
@@ -87,10 +87,6 @@ export class CareersComponent implements OnInit {
       ]
     }
   ];
-
-  ngOnInit(): void {
-    window.scrollTo(0, 0);
-  }
 
   onSubmit(form: NgForm) {
     if (form.valid) {
